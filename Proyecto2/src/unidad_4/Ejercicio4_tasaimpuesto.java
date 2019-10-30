@@ -29,12 +29,17 @@ public class Ejercicio4_tasaimpuesto {
 	
 		switch (estadoCivil){
 		case 0: {
-			if (bruto <= 8.350) {
+			if (bruto <= 8350) {
 				soloIVA = bruto*0.1;
 				brutomasIVA = bruto+soloIVA;
 				System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+				if (bruto > 8350 or bruto <=33950) {
+					soloIVA = bruto*0.1;
+					brutomasIVA = bruto+soloIVA;
+					System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+				}
 			}
-		}
+		  }
 			
 		}
 	}
