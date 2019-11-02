@@ -33,14 +33,135 @@ public class Ejercicio4_tasaimpuesto {
 				soloIVA = bruto*0.1;
 				brutomasIVA = bruto+soloIVA;
 				System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
-				if (bruto > 8350 or bruto <=33950) {
-					soloIVA = bruto*0.1;
+			}
+				else if (bruto >= 8350 || bruto <=33950) {
+					soloIVA = bruto*0.15;
 					brutomasIVA = bruto+soloIVA;
 					System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
 				}
+					else if (bruto >= 33951 || bruto <=82250) {
+						soloIVA = bruto*0.25;
+						brutomasIVA = bruto+soloIVA;
+						System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+					}
+						else if (bruto >= 82251 || bruto <=171550) {
+							soloIVA = bruto*0.28;
+							brutomasIVA = bruto+soloIVA;
+							System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+						}
+							else if (bruto >= 171551 || bruto <=372950) {
+								soloIVA = bruto*0.33;
+								brutomasIVA = bruto+soloIVA;
+								System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+							}
+								else if (bruto >= 372951) {
+									soloIVA = bruto*0.35;
+									brutomasIVA = bruto+soloIVA;
+									System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+								}
+			break;
+			}/*cierre case 0*/
+		case 1: {
+			if (bruto <= 16700) {
+				soloIVA = bruto*0.1;
+				brutomasIVA = bruto+soloIVA;
+				System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
 			}
-		  }
+				else if (bruto >= 16701 || bruto <=67900) {
+					soloIVA = bruto*0.15;
+					brutomasIVA = bruto+soloIVA;
+					System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+				}
+					else if (bruto >= 67901 || bruto <=137050) {
+						soloIVA = bruto*0.25;
+						brutomasIVA = bruto+soloIVA;
+						System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+					}
+						else if (bruto >= 137051 || bruto <=208850) {
+							soloIVA = bruto*0.28;
+							brutomasIVA = bruto+soloIVA;
+							System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+						}
+							else if (bruto >= 208851 || bruto <=372950) {
+								soloIVA = bruto*0.33;
+								brutomasIVA = bruto+soloIVA;
+								System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+							}
+								else if (bruto >= 372951) {
+									soloIVA = bruto*0.35;
+									brutomasIVA = bruto+soloIVA;
+									System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+								}
+			break;
+			}/*cierre del caso 1*/
+		case 2: {
+			if (bruto <= 8350) {
+				soloIVA = bruto*0.1;
+				brutomasIVA = bruto+soloIVA;
+				System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+			}
+				else if (bruto >= 8350 || bruto <=33950) {
+					soloIVA = bruto*0.15;
+					brutomasIVA = bruto+soloIVA;
+					System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+				}
+					else if (bruto >= 33951 || bruto <=68525) {
+						soloIVA = bruto*0.25;
+						brutomasIVA = bruto+soloIVA;
+						System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+					}
+						else if (bruto > 68526 || bruto <=104425) {
+							soloIVA = bruto*0.28;
+							brutomasIVA = bruto+soloIVA;
+							System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+						}
+							else if (bruto > 104426 || bruto <=186475) {
+								soloIVA = bruto*0.33;
+								brutomasIVA = bruto+soloIVA;
+								System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+							}
+								else if (bruto >= 186476) {
+									soloIVA = bruto*0.35;
+									brutomasIVA = bruto+soloIVA;
+									System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+								}
+			break;
+			}/*cierre case 2*/
+		case 3: {
+			if (bruto <= 11950) {
+				soloIVA = bruto*0.1;
+				brutomasIVA = bruto+soloIVA;
+				System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+			}
+				else if (bruto >= 11951 || bruto <=45500) {
+					soloIVA = bruto*0.15;
+					brutomasIVA = bruto+soloIVA;
+					System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+				}
+					else if (bruto >= 45501 || bruto <=117450) {
+						soloIVA = bruto*0.25;
+						brutomasIVA = bruto+soloIVA;
+						System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+					}
+						else if (bruto > 117451 || bruto <=190200) {
+							soloIVA = bruto*0.28;
+							brutomasIVA = bruto+soloIVA;
+							System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+						}
+							else if (bruto > 190201 || bruto <=372950) {
+								soloIVA = bruto*0.33;
+								brutomasIVA = bruto+soloIVA;
+								System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+							}
+								else if (bruto >= 372951) {
+									soloIVA = bruto*0.35;
+									brutomasIVA = bruto+soloIVA;
+									System.out.printf("El impuesto añadido sera de %f%nEl total del salario sera %f%n",soloIVA, brutomasIVA);
+								}
+			break;
+			}/*cierre case 3*/
+		  }/*cierre switch*/
 			
-		}
-	}
-}
+	}/*cierre metodo main*/
+}/*cierre public class*/
+
