@@ -1,0 +1,27 @@
+/*7. La Ley de Morgan simplifica las expresiones condicionales de la siguiente forma: 
+  
+ 	!(condition1 && condition2) es equivalente a !condition1 || !condition2
+	!(condition1 || condition2) es equivalente a !condition1 && !condition2
+	
+	Verifica que:
+	
+	!(number % 2 == 0 && number % 3 == 0) es igual a => number % 2 != 0 || number %3 != 0
+	!(number == 2 || number == 3) es igual a => number != 2 && number != 3 */
+
+jshell> int numero
+numero ==> 0
+
+jshell> numero =6
+numero ==> 6
+
+jshell> !(numero % 2 == 0 && numero % 3 == 0)
+$3 ==> false
+
+jshell> numero % 2 !=0 || numero % 3 != 0
+$4 ==> false
+
+jshell> !(numero == 2 || numero == 3)
+$5 ==> true
+
+jshell> numero != 2 && numero != 3
+$6 ==> true
