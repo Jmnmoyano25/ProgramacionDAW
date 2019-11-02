@@ -1,0 +1,19 @@
+9. Son las dos expresiones lo mismo:
+
+		(a) x % 2 == 0 && x % 3 == 0
+		(b) x % 6 == 0
+
+jshell> x % 2 == 0 && x % 3 == 0
+$18 ==> false
+
+jshell> x % 6 == 0
+$19 ==> false
+
+jshell> x=6
+x ==> 6
+
+jshell> x % 2 == 0 && x % 3 == 0
+$21 ==> true
+
+jshell> x % 6 == 0
+$22 ==> true

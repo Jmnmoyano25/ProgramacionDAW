@@ -1,0 +1,67 @@
+/*8. x e y son tipos int, qué sentencias son legales:
+
+		x > y > 0
+		x = y && y
+		x /= y
+		x or y
+		x and y
+		(x != 0) || (x = 0)
+
+
+jshell> int x
+jshell> x
+x ==> 3
+
+jshell> y
+y ==> 3
+
+jshell> x > y > 0
+|  Error:
+|  bad operand types for binary operator '>'
+|    first type:  boolean
+|    second type: int
+|  x > y > 0
+|  ^-------^
+
+jshell> x = y && y
+|  Error:
+|  bad operand types for binary operator '&&'
+|    first type:  int
+|    second type: int
+|  x = y && y
+|      ^----^
+
+jshell> x /= y
+$14 ==> 1
+
+jshell> x
+x ==> 1
+
+jshell> y
+y ==> 3
+
+jshell> x or y
+|  Error:
+|  ';' expected
+|  x or y;
+|      ^
+
+jshell> x or y;
+|  Error:
+|  ';' expected
+|  x or y;
+|      ^
+
+jshell> x and y
+|  Error:
+|  ';' expected
+|  x and y;
+|       ^
+
+jshell> (x != 0) || (x = 0)
+|  Error:
+|  bad operand types for binary operator '||'
+|    first type:  boolean
+|    second type: int
+|  (x != 0) || (x = 0)
+|  ^-----------------^

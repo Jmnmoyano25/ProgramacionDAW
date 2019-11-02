@@ -1,0 +1,19 @@
+10. Cuál es el valor de x >= 50 && x <= 100 si x es 45, 67, 101
+
+jshell> x=45
+x ==> 45
+
+jshell> x >= 50 && x <= 100
+$24 ==> false
+
+jshell> x=67
+x ==> 67
+
+jshell> x >= 50 && x <= 100
+$26 ==> true
+
+jshell> x = 101
+x ==> 101
+
+jshell> x >= 50 && x <= 100
+$28 ==> false
