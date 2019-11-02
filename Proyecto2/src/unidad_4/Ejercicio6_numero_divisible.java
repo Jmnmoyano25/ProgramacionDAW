@@ -8,7 +8,7 @@ public class Ejercicio6_numero_divisible {
 	public static void main(String[] args) {
 		// TODO Apéndice de método generado automáticamente
 		Scanner memory = new Scanner(System.in);
-		int divALaVez, divUnoUOtro, divNoAmbos, a;
+		int a;
 		
 		
 		System.out.println("Dame un número entero: ");
