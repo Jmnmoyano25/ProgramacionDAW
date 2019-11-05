@@ -16,30 +16,46 @@ public class Ejercicio13_Loteria {
 		// TODO Apéndice de método generado automáticamente
 		Scanner memory = new Scanner (System.in);
 		
-		double a, b;
-		double usuario_a, usuario_b;
+		int a, b, usuario_a, usuario_b;
 		
 		System.out.println("Ingresa un numero entero del 0 al 9");
-		usuario_a = memory.nextDouble();
+		usuario_a = memory.nextInt();
 		System.out.println("Ingresa un numero entero del 0 al 9");
-		usuario_b = memory.nextDouble();
+		usuario_b = memory.nextInt();
+	 do {
+		a = ((int)Math.floor(Math.random()*9));
+		b = ((int)Math.floor(Math.random()*9));
 		
-		a = Math.floor(Math.random()*(0-9)+9);
-		b = Math.floor(Math.random()*(0-9)+9);
-	 do {	
+
 		if (usuario_a == a && usuario_b == b) {
+		System.out.println(+usuario_a);
+		System.out.println(+usuario_b);
+		System.out.println(+a);
+		System.out.println(+b);
 			System.out.println("¡¡Has ganado 10000€!!");
 		}
 		if (usuario_a == b && usuario_b == a) {
+		System.out.println(+usuario_a);
+		System.out.println(+usuario_b);
+		System.out.println(+a);
+		System.out.println(+b);
 			System.out.println("¡¡Has ganado 3000€!!");
 		}
 		if (usuario_a == a || usuario_a == b || usuario_b == a || usuario_b == b) {
+		System.out.println(+usuario_a);
+		System.out.println(+usuario_b);
+		System.out.println(+a);
+		System.out.println(+b);
 			System.out.println("¡¡Has ganado 1000€!!");
 		}
 		else {
+		System.out.println(+usuario_a);
+		System.out.println(+usuario_b);
+		System.out.println(+a);
+		System.out.println(+b);
 			System.out.println("Suerte la próxima vez");
 		}
-	}while((usuario_a != a) || (usuario_a != b) || (usuario_b != a || usuario_b != b));
+	}while(usuario_a != a && usuario_a != b && usuario_b != a && usuario_b != b);
 	}
 }
 

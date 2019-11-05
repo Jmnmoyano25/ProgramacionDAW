@@ -1,0 +1,22 @@
+/*20. Evalúa la precedencia de las siguientes expresiones:
+
+true || true && false
+true && true || false
+2 * 2 – 3 > 2 && 4 – 2 > 5
+2 * 2 – 3 > 2 || 4 – 2 > 5
+
+*/
+
+jshell> true || true && false
+$1 ==> true
+
+jshell> true && true || false
+$2 ==> true
+
+
+
+jshell> 2*2-3>2&&4-2>5
+$3 ==> false
+
+jshell> 2*2-3>2||4-2>5
+$4 ==> false

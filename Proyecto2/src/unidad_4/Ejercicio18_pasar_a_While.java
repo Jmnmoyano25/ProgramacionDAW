@@ -1,4 +1,4 @@
-/*18. Reescribe el siguiente código con operador condicional
+/*18. Reescribe el siguiente cÃ³digo con operador condicional y = (x > 0) ? 1 : âˆ’1;
 	
 	if (ages >= 16)
 	ticketPrice = 20;
@@ -11,17 +11,15 @@ import java.util.Scanner;
 public class Ejercicio18_pasar_a_While {
 
 	public static void main(String[] args) {
-		// TODO Apéndice de método generado automáticamente
+		// TODO ApÃ©ndice de mÃ©todo generado automÃ¡ticamente
 		Scanner memory = new Scanner (System.in);
-		int años;
+		int ages, precio;
 		System.out.println("Escribe tu edad: ");
-		años = memory.nextInt();
+		ages = memory.nextInt();
 		
-		while (años >= 16){
-			System.out.println("El precio de la entrada es de 20€");
-		}
+		precio = ages >= 16 ? 20 : 10;
 		
-		System.out.println((x < y && y < z) ? "ordenado" : "no ordenado");
+		System.out.println("Tu entrada vale " +precio+ "â‚¬");
 		
 	}
 }
