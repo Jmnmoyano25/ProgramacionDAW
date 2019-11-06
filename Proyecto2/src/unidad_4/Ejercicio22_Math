@@ -1,0 +1,40 @@
+23. Evalúa las siguientes llamadas:
+
+jshell> Math.sqrt(4) 			RAICES CUADRADAS
+$1 ==> 2.0
+
+jshell> Math.sin(2 * Math.PI)	SENO
+$2 ==> -2.4492935982947064E-16
+
+jshell> Math.cos(2 * Math.PI)	COSENO
+$3 ==> 1.0
+
+jshell> Math.pow(2 , 2)			POTENCIA (COCIENTE, EXPONENETE)
+$4 ==> 4.0
+
+jshell> Math.log(Math.E)		LOGARITMO NEPERIANO
+$5 ==> 1.0
+
+jshell> Math.exp(1)				EXPONENTE NEPERIANO
+$6 ==> 2.718281828459045
+
+jshell> Math.max(2, Math.min(3,4))MAXIMOS Y MINIMOS
+$7 ==> 3
+
+jshell> Math.rint(-2.5)			REDONDEO 
+$8 ==> -2.0
+
+jshell> Math.ceil(-2.5)
+$9 ==> -2.0
+
+jshell> Math.floor(-2.4f)		REDONDEO FLOAT
+$10 ==> -3.0
+
+jshell> Math.round(-2.5f)		REDONDEO
+$11 ==> -2
+
+jshell> Math.round(-2.5)		REDONDEO
+$12 ==> -2
+
+jshell> Math.round(Math.abs(-2.5)) ABS VALOR ABSOLUTO Y REDONDEO
+$13 ==> 3

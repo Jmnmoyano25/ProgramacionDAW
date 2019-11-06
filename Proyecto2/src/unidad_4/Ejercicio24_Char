@@ -1,0 +1,19 @@
+24. ¿Son correctos estos caracteres?
+
+jshell> char a = '1'
+a ==> '1'
+
+jshell> char b = '\u345dE'
+|  Error:
+|  unclosed character literal
+|  char a = '\u345dE'
+|           ^
+
+jshell> char c = '\b'
+c ==> '\b'
+
+jshell> char d = '\u3fFa'
+d ==> '?'
+
+jshell> char e = '\t'
+e ==> '\t'
