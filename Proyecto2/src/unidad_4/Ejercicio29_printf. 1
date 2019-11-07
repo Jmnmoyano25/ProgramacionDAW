@@ -1,0 +1,47 @@
+29. Qué sentencias están mal:
+
+(a) System.out.printf("%5d %d", 1, 2, 3);					FALTA UN FORMATO O SOBRA UN VALOR
+(b) System.out.printf("%5d %f", 1);							FALTA UN VALOR PARA EL FORMTATO %
+(c) System.out.printf("%5d %f", 1, 2);						EL SEGUNDO VALOR SE CONSIDERA UN ENTERO NO UN FLOTANTE
+(d) System.out.printf("%.2f\n%0.3f\n", 1.23456, 2.34);		PARA QUITAR DECIMALES NO SE LE
+(e) System.out.printf("%08s\n", "Java");					ES CORRECTO
+
+jshell> System.out.printf("%5d %d", 1, 2, 3);
+    1 2$16 ==> java.io.PrintStream@3c0ecd4b
+
+jshell> System.out.printf("%5d %f", 1);
+    1 |  Exception java.util.MissingFormatArgumentException: Format specifier '%f'
+|        at Formatter.format (Formatter.java:2672)
+|        at PrintStream.format (PrintStream.java:1053)
+|        at PrintStream.printf (PrintStream.java:949)
+|        at (#17:1)
+
+jshell> System.out.printf("%5d %f", 1, 2);
+    1 |  Exception java.util.IllegalFormatConversionException: f != java.lang.Integer
+|        at Formatter$FormatSpecifier.failConversion (Formatter.java:4426)
+|        at Formatter$FormatSpecifier.printFloat (Formatter.java:2951)
+|        at Formatter$FormatSpecifier.print (Formatter.java:2898)
+|        at Formatter.format (Formatter.java:2673)
+|        at PrintStream.format (PrintStream.java:1053)
+|        at PrintStream.printf (PrintStream.java:949)
+|        at (#18:1)
+
+jshell> System.out.printf("%.2f\n%0.3f\n", 1.23456, 2.34);
+|  Exception java.util.MissingFormatWidthException: %0.3f
+|        at Formatter$FormatSpecifier.checkNumeric (Formatter.java:3176)
+|        at Formatter$FormatSpecifier.checkFloat (Formatter.java:3155)
+|        at Formatter$FormatSpecifier.<init> (Formatter.java:2876)
+|        at Formatter.parse (Formatter.java:2713)
+|        at Formatter.format (Formatter.java:2655)
+|        at PrintStream.format (PrintStream.java:1053)
+|        at PrintStream.printf (PrintStream.java:949)
+|        at (#19:1)
+
+jshell> System.out.printf("%.2f\n%.3f\n", 1.23456, 2.34);
+1,23
+2,340
+$20 ==> java.io.PrintStream@3c0ecd4b
+
+jshell> System.out.printf("%8s\n", "Java");
+    Java
+$21 ==> java.io.PrintStream@3c0ecd4b
