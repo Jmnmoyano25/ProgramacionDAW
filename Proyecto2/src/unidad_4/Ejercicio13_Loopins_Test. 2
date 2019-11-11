@@ -1,0 +1,9 @@
+13. Identifica y corrigle los errores en el siguiente código
+
+1º le falta declarar sum
+
+2º le sobra el ; del if
+
+3ºle sobra el ; del while
+
+4º le falta el ; despues del while

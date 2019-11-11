@@ -1,0 +1,52 @@
+8. Es el mismo valor la variable sum en estos loops:
+
+jshell> for (int i = 0; i < 10; ++i){sum += i;}
+
+jshell> sum
+sum ==> 45
+
+jshell> i
+i ==> 0
+
+jshell> for (int i = 0; i < 10; ++i){sum += i;}
+
+jshell> sum
+sum ==> 90
+
+jshell> i
+i ==> 0
+
+jshell> for (int i = 0; i < 10; ++i){sum += i;}
+
+jshell> sum
+sum ==> 135
+
+jshell> i
+i ==> 0
+
+jshell> sum = 0
+sum ==> 0
+
+jshell> for (int i = 0; i < 10; i++){sum += i;}
+
+jshell> sum
+sum ==> 45
+
+jshell> i
+i ==> 0
+
+jshell> for (int i = 0; i < 10; i++){sum += i;}
+
+jshell> sum
+sum ==> 90
+
+jshell> i
+i ==> 0
+
+jshell> for (int i = 0; i < 10; i++){sum += i;}
+
+jshell> sum
+sum ==> 135
+
+jshell> i
+i ==> 0

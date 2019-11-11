@@ -28,31 +28,31 @@ public class Ejercicio13_Loteria {
 		
 
 		if (usuario_a == a && usuario_b == b) {
-		System.out.println(+usuario_a);
-		System.out.println(+usuario_b);
-		System.out.println(+a);
-		System.out.println(+b);
+		System.out.println(usuario_a);
+		System.out.println(usuario_b);
+		System.out.println(a);
+		System.out.println(b);
 			System.out.println("¡¡Has ganado 10000€!!");
 		}
 		if (usuario_a == b && usuario_b == a) {
-		System.out.println(+usuario_a);
-		System.out.println(+usuario_b);
-		System.out.println(+a);
-		System.out.println(+b);
+		System.out.println(usuario_a);
+		System.out.println(usuario_b);
+		System.out.println(a);
+		System.out.println(b);
 			System.out.println("¡¡Has ganado 3000€!!");
 		}
 		if (usuario_a == a || usuario_a == b || usuario_b == a || usuario_b == b) {
-		System.out.println(+usuario_a);
-		System.out.println(+usuario_b);
-		System.out.println(+a);
-		System.out.println(+b);
+		System.out.println(usuario_a);
+		System.out.println(usuario_b);
+		System.out.println(a);
+		System.out.println(b);
 			System.out.println("¡¡Has ganado 1000€!!");
 		}
 		else {
-		System.out.println(+usuario_a);
-		System.out.println(+usuario_b);
-		System.out.println(+a);
-		System.out.println(+b);
+		System.out.println(usuario_a);
+		System.out.println(usuario_b);
+		System.out.println(a);
+		System.out.println(b);
 			System.out.println("Suerte la próxima vez");
 		}
 	}while(usuario_a != a && usuario_a != b && usuario_b != a && usuario_b != b);
