@@ -5,7 +5,7 @@ for (int i = 0; i <= 1000; i++)
 sum = sum + i;
 */
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio11_Loopins_for_a_WhileAndDoWhile {
 

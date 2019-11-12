@@ -1,7 +1,7 @@
 /*6. Supón que la entrada es 2 3 4 5 0. Qué salida tiene el programa
 */
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio06_Loopins {
 

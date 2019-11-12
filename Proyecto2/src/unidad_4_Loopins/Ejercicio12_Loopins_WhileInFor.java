@@ -8,7 +8,7 @@ i++;
 }
 */
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio12_Loopins_WhileInFor {
 

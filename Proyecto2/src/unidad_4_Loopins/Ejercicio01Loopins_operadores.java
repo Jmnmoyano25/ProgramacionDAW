@@ -3,7 +3,7 @@ introduzca un int y determine si es divisible por 4 y 5, si es divisible por 4 ó
 por 4 o 5 pero no ambos.
 */
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio01Loopins_operadores {
 

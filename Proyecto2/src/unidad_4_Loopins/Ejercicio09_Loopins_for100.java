@@ -1,6 +1,6 @@
 /*9. Escribe un loop for que imprima números del 1 al 100*/
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio09_Loopins_for100 {
 

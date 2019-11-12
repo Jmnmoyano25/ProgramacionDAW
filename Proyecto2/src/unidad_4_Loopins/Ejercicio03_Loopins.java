@@ -6,7 +6,7 @@ b) nada
 c) 3, 5, 7, 9
 */
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio03_Loopins {
 

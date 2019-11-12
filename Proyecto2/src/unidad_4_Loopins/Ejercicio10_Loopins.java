@@ -15,7 +15,7 @@ System.out.println("count is " + count);
 
 */
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio10_Loopins {
 

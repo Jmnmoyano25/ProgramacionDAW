@@ -13,7 +13,7 @@ number = input.nextInt();
 }
 */
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio07_Loopins_While_aDoWhile {
 

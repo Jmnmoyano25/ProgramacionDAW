@@ -1,7 +1,7 @@
 /*13. Identifica y corrigle los errores en el siguiente código*/
 
 
-package unidad_4;
+package unidad_4_Loopins;
 import java.util.Scanner;
 public class Ejercicio13_Loopins_Test {
 
