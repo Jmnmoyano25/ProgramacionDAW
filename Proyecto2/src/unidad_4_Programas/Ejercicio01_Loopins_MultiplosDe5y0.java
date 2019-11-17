@@ -5,18 +5,30 @@ utilizando un bucle for.
 */
 
 package unidad_4_Programas;
-import java.util.Scanner;
+
 public class Ejercicio01_Loopins_MultiplosDe5y0 {
 
 	public static void main(String[] args) {
 		// TODO Apéndice de método generado automáticamente
-		Scanner memory = new Scanner (System.in);
+
 		int mult = 0;
-		while (mult < 100){
-			System.out.println();(mult % 5 == 0 || mult % 0 == 0)
-			System.out.println("");
+		while (mult < 101){
+			if (mult % 5 == 0)
+			System.out.println("while"+mult);
 			mult++;
 		}//fin del while
+		mult = 0;
+		do {
+			if (mult % 5 == 0)
+				System.out.println("do-while"+mult);
+				mult++;
+		}while(mult < 101);
+		
+		for (mult = 0; mult < 101; mult++) {
+			if (mult % 5 == 0)
+			System.out.println("for"+mult);
+		}
+		
 		
 	}
 
