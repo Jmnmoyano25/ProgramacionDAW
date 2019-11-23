@@ -27,7 +27,7 @@ La mensualidad a pagar es: $2076.02
 El pago total es: $373684.53
 ```*/
 
-package unidad2;
+package unidad_2;
 import java.util.Scanner;
 public class Ejercicio13Prestamos {
 

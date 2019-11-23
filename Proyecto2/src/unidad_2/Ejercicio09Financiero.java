@@ -9,7 +9,7 @@ Realiza un programa que calcule y muestre por pantalla el beneficio de los 6 pri
  De entrada pide el beneficio mensual, ej 100€.*/
 
 
-package  unidad2;
+package  unidad_2;
 
 import java.util.Scanner;
 

@@ -5,7 +5,7 @@
  * Se pueden utilizar la funciones Math.pow y Math.sqrt.
  */
 
-package unidad2;
+package unidad_2;
 import java.util.Scanner;
 public class Ejercicio11DistanciaEntreLineas {
 

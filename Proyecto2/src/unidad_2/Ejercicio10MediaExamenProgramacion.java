@@ -15,7 +15,7 @@ Introduce la nota del primer examen: 8
 ¿Qué nota quieres sacar en el trimestre? 7
 Para tener un 7 en el trimestre necesitas sacar un 6.33 en el segundo examen*/
 
-package unidad2;
+package unidad_2;
 
 import java.util.Scanner;
 

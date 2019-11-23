@@ -9,7 +9,7 @@ imprimir:
 4   2   3   3   9
 ```*/
 
-package unidad2;
+package unidad_2;
 import java.util.Scanner;
 public class Ejercicio12SeparacionEnteros {
 
