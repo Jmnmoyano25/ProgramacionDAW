@@ -1,0 +1,35 @@
+Ejercicio 4
+
+a) Que asignación es correcta en Java4
+son validos, c, e, f y g
+
+b) Cual es la salida del sigueinte codigo
+
+AAABBB
+
+c) Si inf f= 5 que sentencia asigna g=0
+
+d, todas son correctas
+
+d)Supongamos que w= 15, que valor tiene la sigueinte expresión:
+
+
+e) Que imprime el siguiente for:
+
+no imprime nada
+
+f)Que imprimirian esta salidad formateas:
+
+ID        Descripción FechaEnvio  Precio    Peso  
+
+El total es 32,33% 3,2320e+01
+
+g) que valor tienen las sigueinets expresiones si x= 2 y =3 z=6
+
+jshell> (x<y&&x<z)
+$4 ==> true
+
+jshell> !(x<y)
+$5 ==> false
+
+h) 
