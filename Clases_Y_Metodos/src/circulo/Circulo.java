@@ -2,7 +2,7 @@ package circulo;
 
 public class Circulo {
 
-	private double radio;
+	public double radio;
 
 	
 	//constructores
