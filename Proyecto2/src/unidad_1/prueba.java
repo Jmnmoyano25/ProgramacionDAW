@@ -13,7 +13,7 @@ System.out.printf("El total es %5.2f%% %5.4e\n", 32.327, 32.32);
 int x = 2, y= 3, z=6;
 double r;
 
-r = (x<y&&x<z);
+
 
 
 
