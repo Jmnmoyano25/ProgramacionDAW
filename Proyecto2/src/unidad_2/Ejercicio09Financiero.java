@@ -3,7 +3,7 @@
  *   sería: 0.0375/12 = 0.003125. 
  *
 * Después del primer mes la ganancia sería: 100 + (0.003125 *100) = 100.3125
-* Después del segundo mes sería de: (100.3125 + 100) * ( 1 + .003125) = 200.9384765625
+* Después del segundo mes sería de: (100.3125 + 100) * ( 1 + 0.003125) = 200.9384765625
 
 Realiza un programa que calcule y muestre por pantalla el beneficio de los 6 primeros meses.
  De entrada pide el beneficio mensual, ej 100€.*/
