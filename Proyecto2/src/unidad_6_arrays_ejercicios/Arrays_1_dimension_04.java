@@ -1,4 +1,4 @@
-package unidad_5_arrays_ejercicios;
+package unidad_6_arrays_ejercicios;
 
 public class Arrays_1_dimension_04 {
 
