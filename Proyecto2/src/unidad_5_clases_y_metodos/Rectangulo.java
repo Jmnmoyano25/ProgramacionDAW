@@ -1,4 +1,4 @@
-package unidad_5_clases_y_metodos_2;
+package unidad_5_clases_y_metodos;
 
 /*
  * clase accesible desde cualquier parte
@@ -62,7 +62,7 @@ public class Rectangulo {//si quitamos public solo podemos acceder a la clase de
 		this.y2 += Y;
 	}
 	
-	public int obtenerNumeroRectangulo() {
+	public static int obtenerNumeroRectangulo() { //metodo estatico que solo devuelve estaticos
 		
 		return numRectangulos;
 	}

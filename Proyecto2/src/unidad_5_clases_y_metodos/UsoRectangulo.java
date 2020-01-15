@@ -1,4 +1,4 @@
-package unidad_5_clases_y_metodos_2;
+package unidad_5_clases_y_metodos;
 
 public class UsoRectangulo {
 

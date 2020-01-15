@@ -1,6 +1,5 @@
 package unidad_5_clases_y_metodos_TEMP;
-import unidad_5_clases_y_metodos_2.Rectangulo; 
-//importamos la clase Rectangulo por que esta en otro paquete y necesitamos importar la clase.
+import unidad_5_clases_y_metodos.Rectangulo;
 
 public class UsoRectangulo2 {
 
