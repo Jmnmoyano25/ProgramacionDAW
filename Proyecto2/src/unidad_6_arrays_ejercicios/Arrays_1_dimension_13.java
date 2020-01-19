@@ -1,6 +1,6 @@
 package unidad_6_arrays_ejercicios;
 import java.util.Scanner;
-public class Arrays_1_dimension_13º {
+public class Arrays_1_dimension_13 {
 
 	public static void main(String[] args) {
 		// TODO Apéndice de método generado automáticamente
