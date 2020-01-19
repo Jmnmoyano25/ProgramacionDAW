@@ -20,7 +20,9 @@ public class Rectangulo {//si quitamos public solo podemos acceder a la clase de
 	private String nombre;
 	public static final String nombreFigura= "Rectangulo";
 	
-	public Rectangulo(String nombre) { //constructor
+	//constructor
+	
+	public Rectangulo(String nombre) { 
 		Rectangulo.numRectangulos++;
 		this.nombre = nombre;
 	}
@@ -31,6 +33,10 @@ public class Rectangulo {//si quitamos public solo podemos acceder a la clase de
 		this.y1 = y1;
 		this.y2 = y2;
 	}
+	
+	
+	//metodos
+	
 	
 	public String obtenerNombre(){
 		return nombre;
