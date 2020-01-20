@@ -11,7 +11,6 @@ public class Arrays_1_dimension_14 {
 		String [] coloresIniciales = new String[8];
 		String [] palabrasUsuario = new String[8];
 		String [] arrayNuevo = new String[8];
-		String palabra;
 		int i,j;
 		int arrayOrdenado = 0;
 		
@@ -25,11 +24,22 @@ public class Arrays_1_dimension_14 {
 		coloresIniciales[7] = "blanco";
 		
 		//rellenamos el array de palabrasUsuario con las del usuario.
-		for(i = 0; i < palabrasUsuario.length; i++) {
+		/*for(i = 0; i < palabrasUsuario.length; i++) {
 			System.out.println("Escribe una palabra: ");
 			palabra = sc.next();
 			palabrasUsuario[i] = palabra;
-		}
+		}*/
+		//relleno el array palabrasUsuario para no tener que meterlos continuamente
+		
+		palabrasUsuario[0] = "casa";
+		palabrasUsuario[1] = "coche";
+		palabrasUsuario[2] = "amarillo";
+		palabrasUsuario[3] = "hombre";
+		palabrasUsuario[4] = "verde";
+		palabrasUsuario[5] = "azul";
+		palabrasUsuario[6] = "bombilla";
+		palabrasUsuario[7] = "naranja";
+		
 		//rellenamos el array Indice.
 		for(i = 0; i < arrayIndice.length; i++) {
 			arrayIndice[i] = i;
@@ -59,17 +69,26 @@ public class Arrays_1_dimension_14 {
 			System.out.print(palabrasUsuario[i]+" ");
 			}
 		}
+
 		//comprovamos si alguna palabra es un color
-		for(i = 0; i < palabrasUsuario.length; i++) {
+		int prueba = 0;
+		for(i = 0; i < palabrasUsuario.length -1; i++) {
+			
+			System.out.println("1for");
+			System.out.println(arrayOrdenado+" prueba");
+			System.out.println("    "+prueba++);
+			System.out.println(palabrasUsuario[i]);
 			for(j = 0;j < coloresIniciales.length; j++) {
 				if(palabrasUsuario[i] == coloresIniciales[j]) {
 					arrayNuevo[arrayOrdenado] = palabrasUsuario[i];
 					arrayOrdenado++;
-				}
+				}else {System.out.println(arrayOrdenado+" for interno");}
 			}
 		}
+		System.out.println("2for");
+		System.out.println(arrayOrdenado);
 		//llenamos el resto del nuevo array con las palabras que no sean colores
-		for(i = 0; i < palabrasUsuario.length; i++) {
+		for(i = 0; i <= palabrasUsuario.length -1; i++) {
 			for(j = 0;j < coloresIniciales.length; j++) {
 				if(palabrasUsuario[i] != coloresIniciales[j]) {
 					arrayNuevo[arrayOrdenado] = palabrasUsuario[i];
@@ -78,7 +97,7 @@ public class Arrays_1_dimension_14 {
 			}
 		}
 		//volvemos a mostrar los nuevos resultados
-		/*//mostramos el conjunto de array inicial
+		//mostramos el conjunto de array inicial
 		for(i = 0; i < arrayIndice.length; i++) {
 			System.out.print("    "+arrayIndice[i]+"    "+" ");
 		}
@@ -101,7 +120,7 @@ public class Arrays_1_dimension_14 {
 			}else if (arrayNuevo[i].length() <= 9) {
 			System.out.print(arrayNuevo[i]+" ");
 			}
-		}*/
+		}
 		
 		
 		

@@ -28,6 +28,7 @@ public class Arrays_1_dimension_10 {
             	arrayOrdenada++;
             }else {}
         }
+  
         
         //ahora pasamos el resto de numeros (solo quedan impares) al resto del arrayOrdenado
         
