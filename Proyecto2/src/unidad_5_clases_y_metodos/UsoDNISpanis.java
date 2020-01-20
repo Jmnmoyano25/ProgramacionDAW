@@ -7,14 +7,13 @@ public class UsoDNISpanis {
 		
 		DNISpanish DNI1 = new DNISpanish(); 
 		
-		DNI1.establecer(3200889);
-		DNI1.establecer("32535435C");
+		DNI1.establecer(51997678);
+		DNI1.establecer("51997678Z");
 		
 		System.out.println(DNI1.getDNI());
 		
-		DNI1.establecer(51997678);
-		
-		DNI1.establecer("51997678P");
+		System.out.println(DNI1.getNIF());
+
 		
 		
 		

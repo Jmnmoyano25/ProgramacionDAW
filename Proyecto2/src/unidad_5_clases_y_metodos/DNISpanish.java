@@ -39,7 +39,7 @@ public class DNISpanish {
 			//llamamos al metodo validar[boolean], este mismo llama a otros dos metodos
 			
 			if(validarNIF(NIF)) {
-				System.out.println("OK DNI");
+				System.out.println("Este NIF: "+NIF+" es valido");
 				this.numDNI  = extraerNumeroNIF(NIF);
 			}
 			//throw lo utilizamos para capturar el error
