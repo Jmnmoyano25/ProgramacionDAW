@@ -14,10 +14,8 @@ public class DNISpanish {
 		//constructores
 		
 		public DNISpanish() {
-		
 		}
-		
-		
+				
 		//metodos
 		public int getDNI() {
 			return numDNI;
@@ -28,24 +26,30 @@ public class DNISpanish {
 		}
 		
 		public void establecer (int DNI) {
-			//llamamos al metodo calcularLetraNIF para 
+			
+			//llamamos al método calcularLetraNIF para saber la letra del ENTERO
+			
 			char letra = calcularLetraNIF(DNI);
 			this.numDNI = DNI;
 			System.out.println(letra);
-			
 		}
+		
 		public void establecer (String NIF) throws Exception{
+			
+			//llamamos al metodo validar[boolean], este mismo llama a otros dos metodos
 			
 			if(validarNIF(NIF)) {
 				System.out.println("OK DNI");
 				this.numDNI  = extraerNumeroNIF(NIF);
 			}
+			//throw lo utilizamos para capturar el error
 			else throw new Exception("KO DNI");
 		}
-		
-		//metodos ocultos para calculo del metodo public "esteblecer DNI"
-		//este metodo es para el caso de que el usuario introduzca el DNI
-		
+				//---------------------------------------------------------------
+				//metodo oculto para calculo del metodo public "esteblecer DNI"
+				//este metodo es usuado cuando se establece el DNI por el usuario
+				//---------------------------------------------------------------
+		//metod 1º
 		private static char calcularLetraNIF(int DNI) {
 			int posLetra = DNI % 23;
 			char letra = LETRAS_NIF.charAt(posLetra);
@@ -55,18 +59,11 @@ public class DNISpanish {
 		}
 		
 		
-		/*private String prueba() {
-			String LETRA = Character.toString(calcularLetraNIF(this.numDNI));
-			
-			String DNI = String.valueOf(this.numDNI); 
-			
-			String NIF = DNI + LETRA;
-			return NIF;
-		}*/
-		
-		//metodos ocultos para calculo del metodo public "establecer NIF"
-		//estos metodos sos para el caso que el usuario introduzca el NIF
-		
+				//------------------------------------------------------------------		
+				//metodos ocultos para calculo del metodo public "establecer NIF"
+				//estos metodos son usados cuando se establece el NIF por el usuario
+				//------------------------------------------------------------------
+		//metodo 2º
 		private static char extraerLetraNIF(String NIF) {
 						
 			char LETRA = NIF.charAt(NIF.length()-1);
@@ -74,16 +71,19 @@ public class DNISpanish {
 			return LETRA;
 			//la variable NIF en este metodo es inventado, podria ser "juanito"
 		}
+		
+		//metodo 3º
 		private static int extraerNumeroNIF(String NIF) {
-			
-			 
+						 
 			int NUMERO = Integer.parseInt(NIF.substring(0, NIF.length()-1));
 			
 			return NUMERO;
 		}
 		
-		//metodo comprobar los metodos anteriores
-		
+				//-----------------------------------------------------------
+				//metodo utilizado para comprobar los tres métodos anteriores
+				//-----------------------------------------------------------
+		//metodo 4º
 		private boolean validarNIF(String NIF) {
 			
 			boolean valida = true;
@@ -97,8 +97,6 @@ public class DNISpanish {
 			else valida = false;
 			
 			return valida;
-			
-			
 		}
 		
 }
