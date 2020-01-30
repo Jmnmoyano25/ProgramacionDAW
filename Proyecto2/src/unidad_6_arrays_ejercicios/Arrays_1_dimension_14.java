@@ -13,6 +13,8 @@ public class Arrays_1_dimension_14 {
 		String [] arrayNuevo = new String[8];
 		int i,j;
 		int arrayOrdenado = 0;
+		int contador = 8;
+
 		
 		coloresIniciales[0] = "verde";
 		coloresIniciales[1] = "rojo";
@@ -71,33 +73,37 @@ public class Arrays_1_dimension_14 {
 		}
 
 		//comprovamos si alguna palabra es un color
-		int prueba = 0;
-		for(i = 0; i < palabrasUsuario.length -1; i++) {
-			
-			System.out.println("1for");
-			System.out.println(arrayOrdenado+" prueba");
-			System.out.println("    "+prueba++);
-			System.out.println(palabrasUsuario[i]);
+
+		for(i = 0; i < palabrasUsuario.length; i++) {			
+			//System.out.println("\n"+palabrasUsuario[i]);
 			for(j = 0;j < coloresIniciales.length; j++) {
 				if(palabrasUsuario[i] == coloresIniciales[j]) {
-					arrayNuevo[arrayOrdenado] = palabrasUsuario[i];
-					arrayOrdenado++;
-				}else {System.out.println(arrayOrdenado+" for interno");}
-			}
-		}
-		System.out.println("2for");
-		System.out.println(arrayOrdenado);
-		//llenamos el resto del nuevo array con las palabras que no sean colores
-		for(i = 0; i <= palabrasUsuario.length -1; i++) {
-			for(j = 0;j < coloresIniciales.length; j++) {
-				if(palabrasUsuario[i] != coloresIniciales[j]) {
 					arrayNuevo[arrayOrdenado] = palabrasUsuario[i];
 					arrayOrdenado++;
 				}
 			}
 		}
+		
+
+		//llenamos el resto del nuevo array con las palabras que no sean colores
+		for(i = 0; i < palabrasUsuario.length; i++) {
+			//System.out.println("\n"+palabrasUsuario[i]);
+			contador = 8;
+			for(j = 0; j < coloresIniciales.length; j++) {
+				if(palabrasUsuario[i] != coloresIniciales[j]) {
+					//System.out.println(palabrasUsuario[i]+" != "+coloresIniciales[j]);
+					contador--;
+					if(contador == 0) {
+						arrayNuevo[arrayOrdenado] = palabrasUsuario[i];
+						arrayOrdenado++;
+						
+					}
+				}
+			}
+		}
 		//volvemos a mostrar los nuevos resultados
 		//mostramos el conjunto de array inicial
+		System.out.println("\n");
 		for(i = 0; i < arrayIndice.length; i++) {
 			System.out.print("    "+arrayIndice[i]+"    "+" ");
 		}

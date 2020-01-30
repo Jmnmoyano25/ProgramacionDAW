@@ -28,12 +28,13 @@ public class Libro {
 	public boolean prestar() {
 		
 		if(prestado == true) {
-			System.out.println("El libro "+this.titulo+" ya esta prestado");
-			return prestado = false;
+			System.out.println("El libro \""+this.titulo+"\" ya esta prestado");
+			
 		}else{
-			System.out.println("El libro "+this.titulo+" se ha prestado");
-			return prestado = true;
+			System.out.println("El libro \""+this.titulo+"\" se ha prestado");
+			prestado = true;
 		}
+		return prestado;
 		
 	}
 	
@@ -42,15 +43,16 @@ public class Libro {
 	//		y
 	//false en caso de no poder devolverse por no estar prestado
 		
-	public boolean devuelto() {
+	public boolean devolver() {
 
-		if(prestado = true) {
-			System.out.println("El libro "+this.titulo+" se ha devuelto correctamente");
-			return prestado = false;
+		if(prestado == true) {
+			System.out.println("El libro \""+this.titulo+"\" se ha devuelto correctamente");
+			prestado = false;
 		}else {
-			System.out.println("El libro "+this.titulo+" no puede ser devuelto porque no ha sido prestado aún");
-			return prestado = true;
+			System.out.println("El libro \""+this.titulo+"\" no puede ser devuelto porque no ha sido prestado aún");
+			
 		}
+		return prestado;
 	}
 	//no me funciona correctamente el metodo devuelto().
 	
