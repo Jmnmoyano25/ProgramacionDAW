@@ -33,7 +33,7 @@ public class Persona {
 	public double IMC() {
 	//peso kg/altura^2 m
 		double IMC;
-		IMC = (peso)/(altura*altura);
+		IMC = peso/Math.pow(altura, 2);
 		return IMC;
 	}
 	
@@ -63,6 +63,7 @@ public class Persona {
 	
 	//no creo que este bien aún
 	private void comprobarSexo(String sexo) {
+		sexo = this.sexo;
 		if (sexo == "H" || sexo == "M" || sexo == "h" || sexo == "m") {
 			System.out.println("sexo correcoto");
 		}else {
