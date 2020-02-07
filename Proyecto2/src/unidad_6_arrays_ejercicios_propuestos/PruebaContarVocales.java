@@ -5,19 +5,18 @@ public class PruebaContarVocales {
 	public static void main(String[] args) {
 		// TODO Apéndice de método generado automáticamente
 			Scanner sc = new Scanner(System.in);
-			ContarVocales CV1 = new ContarVocales();
+			ContarVocales CV = new ContarVocales();
 			
+			String fra;
 	
-		String fra;
-			
 			System.out.println("Escribe una frase: ");
 			fra = sc.nextLine();
 			
-			CV1.setFrase(fra);
+			CV.setFrase(fra);
 			
-			System.out.println(CV1.getFrase());
+			System.out.println(CV.getFrase());
 			
-			System.out.println(CV1.cuentaVocales());
+			System.out.println(CV.cuentaVocales());
 			
 			
 			

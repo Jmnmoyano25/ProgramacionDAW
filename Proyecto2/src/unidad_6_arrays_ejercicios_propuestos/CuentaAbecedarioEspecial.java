@@ -11,7 +11,7 @@ public class CuentaAbecedarioEspecial {
 		char[] abc = new char[3];
 		String frase;
 		
-		abcd = "[A-Z]"
+		//abcd = "[A-Z]"
 		
 		abc[0] = 'a';
 		abc[1] = 'e';
@@ -37,12 +37,7 @@ public class CuentaAbecedarioEspecial {
 		for (int j = 0; j < abc.length; j++) {
 			
 			System.out.println(abc[j]+ " se repite "+contador[j]);
-			//copia_contador[j] = Integer.toString(cuentaVocales()[j]);
-			
-			//copia_abc[j] = Character.toString(this.abc[j]);
-			
-			//resultado = (copia_abc[j]+ "se repite "+copia_contador[j]);
-			//resultado = "jolo";
+
 		}
 		
 		
