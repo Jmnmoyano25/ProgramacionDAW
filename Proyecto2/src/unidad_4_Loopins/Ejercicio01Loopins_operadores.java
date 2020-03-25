@@ -1,4 +1,4 @@
-/*1. Utiliza los operadores &&, ||, ^. Escribe un programa que impirma que el usuario
+/*1. Utiliza los operadores &&, ||, ^. Escribe un programa que imprima que el usuario
 introduzca un int y determine si es divisible por 4 y 5, si es divisible por 4 ó 5 y si es divisible
 por 4 o 5 pero no ambos.
 */

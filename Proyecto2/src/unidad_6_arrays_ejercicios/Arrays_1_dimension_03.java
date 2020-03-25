@@ -10,7 +10,8 @@ public class Arrays_1_dimension_03 {
 				
 		        for (int i = 0; i < numeros.length; i++) {
 		            System.out.print("Introduce un número entero y pulsa intro: ");
-		            numeros[i]=memory.nextInt();            
+		            numeros[i]=memory.nextInt();    
+		            
 		        }
 		        
 		        System.out.println("\nLos numeros introducidos a la inversa son:");
