@@ -10,6 +10,7 @@ public class ArraysBi {
 	//CONSTRUCTORES
 	protected ArraysBi() {}
 	
+	
 	protected ArraysBi(int[] array, int[][] arrayBi) {
 		this.array = array;
 		this.arrayBi = arrayBi;
