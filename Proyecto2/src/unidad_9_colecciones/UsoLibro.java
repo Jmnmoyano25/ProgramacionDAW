@@ -27,6 +27,6 @@ public class UsoLibro {
 			System.out.println("No son el mismo libro");
 			System.out.println(libro1.hashCode());
 			System.out.println(libro3.hashCode());
-		
+			
 	}
 }
