@@ -30,6 +30,7 @@ public class ClaseRacional {
 	    System.out.println(numerador + "/" + denominador);
 
 	  }
+	  //una
 
 	 	 	
 }
