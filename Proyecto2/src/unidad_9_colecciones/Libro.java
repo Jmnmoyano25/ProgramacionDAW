@@ -35,9 +35,7 @@ public class Libro {
 	
 	/*
 	 * eclipse permite crear equals y hascode
-	 */
-	
-	
+	 */	
 	
 	@Override
 	public int hashCode() {
