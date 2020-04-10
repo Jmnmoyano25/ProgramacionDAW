@@ -16,6 +16,27 @@ public class Libro {
 		return "El libro es: " + titulo + ". El autor es: " + autor + ". Y el ISBN es: " + ISBN;
 	}
 
+
+	
+//	public boolean equals(Object obj) { //sobreescribimos el metodo equals. mirar triangulo verde
+//		
+//		if(obj instanceof Libro) {
+//			Libro otro = (Libro)obj; //hemos hecho un casting de obj para que equals acceda al ISBN del Object
+//			
+//			if(this.ISBN == otro.ISBN) {
+//				return true;
+//			}else {
+//				return false;
+//			}
+//		}else {
+//			return false; //devolvemos false si obj no es igual a Libro
+//		}
+//	}
+	
+	/*
+	 * eclipse permite crear equals y hascode
+	 */
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -37,27 +58,6 @@ public class Libro {
 			return false;
 		return true;
 	}
-	
-//	public boolean equals(Object obj) { //sobreescribimos el metodo equals. mirar triangulo verde
-//		
-//		if(obj instanceof Libro) {
-//			Libro otro = (Libro)obj; //hemos hecho un casting de obj para que equals acceda al ISBN del Object
-//			
-//			if(this.ISBN == otro.ISBN) {
-//				return true;
-//			}else {
-//				return false;
-//			}
-//		}else {
-//			return false; //devolvemos false si obj no es igual a Libro
-//		}
-//	}
-	
-	/*
-	 * eclipse permite crear equals y hascode
-	 */
-	
-	
 	
 	
 	
