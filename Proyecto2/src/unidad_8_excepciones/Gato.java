@@ -7,7 +7,7 @@ public class Gato {
 	String sexo;
 	String raza;
 	
-	//CONSTRUCTORES
+	//CONSTRUCTORES 
 //	public Gato() {}
 	
 	public Gato (String criaSexo) {
