@@ -4,16 +4,25 @@ import java.util.*;
 
 public class LinkedListMetodos {
 	
+	//tamaño de la sita
 	public static void tamañoLista(List<String> lista) {
 		System.out.println("El tamaño de la lista es: "+lista.size());
 	}
-	
+	//recorrer con un for
 	public static void recorrerFor(List<String> lista){
 		System.out.println("\n");
 		for(int i = 0; i < lista.size(); i++) {
 			System.out.println("Los nombres recorridos con el bucle for son "+(i+1)+": "+lista.get(i));
 		}
 	}
+	
+	//recorrer con un foreach
+	public static void recorrerForeach(List<String> lista) {
+		System.out.println("\n");
+		
+	}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Apéndice de método generado automáticamente
